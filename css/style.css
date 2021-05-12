@@ -24,6 +24,12 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+}
+
+.side-top{
+    height: calc(100% - 80px);
+    overflow: hidden;
 }
 
 /*header colonna laterale*/
@@ -74,6 +80,15 @@ aside{
     margin-bottom: 10px;
 }
 
+.add-row{
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+
+.add-row:hover{
+    color: white;
+}
+
 .add-button{
     font-size: 24px;
     font-weight: 700;
@@ -83,19 +98,66 @@ aside{
     color: black;
 }
 
-.aside-playlist ul{
+.box-ul{
+    height: 47%;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.box-ul ul{
     font-size: 14px;
     margin-top: 15px;
 }
 
-.aside-playlist ul li a{
+.box-ul ul li a{
     line-height: 30px;
     padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(148, 148, 148);
 }
 
-.aside-playlist *:hover{
+.box-ul *:hover{
     color: white;
 }
+
+.aside-footer{
+    height: 80px;
+    padding: 0px 10px;
+    bottom: 0;
+}
+
+.aside-footer-row{
+    color: rgb(148, 148, 148);
+    line-height: 40px;
+    text-decoration: none; 
+    font-size: 14px;
+}
+
+.aside-footer img{
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.aside-footer-row:hover{
+    color: white;
+}
+
+.user{
+    margin: 10px 0;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.user img{
+    width: 25px;
+    padding: 0 2px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 50px;
+}
+
+
 
 
 /*contenuto centrale*/
