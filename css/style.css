@@ -6,6 +6,49 @@
 
 .container{
     width: 100%;
+    height: 100vh;
+}
+
+main{  
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+}
+
+/*colonna laterale*/
+aside{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.aside-header img{
+    width: 75%;
+    margin: 20px 10px;      
+}
+
+/*contenuto centrale*/
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 25, 34);
+}
+
+/*header contenuto centrale*/
+.content-header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(8, 11, 18);
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(40, 40, 40);
 }
 
 
