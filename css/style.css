@@ -25,9 +25,32 @@ aside{
     justify-content: flex-start;
 }
 
+/*header colonna laterale*/
 .aside-header img{
     width: 75%;
-    margin: 20px 10px;      
+    margin: 20px 10px;   
+    cursor: pointer;   
+}
+
+/*nav colonna laterale*/
+.aside-nav.row{
+    display: flex;
+    color: rgb(148, 148, 148);
+    padding: 2px 10px;
+    line-height: 20px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-left: 3px solid transparent;
+}
+
+.aside-nav.row:hover{
+    color: white;
+    border-left: 3px solid rgb(3, 194, 3);
+}
+
+.aside-nav.row img{
+    height: 20px;
+    margin-right: 10px;
 }
 
 /*contenuto centrale*/
