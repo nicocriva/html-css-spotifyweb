@@ -80,6 +80,7 @@ aside{
     margin-bottom: 10px;
 }
 
+/*colonna laterale add*/
 .add-row{
     text-decoration: none;
     color: rgb(148, 148, 148);
@@ -97,7 +98,7 @@ aside{
     background-color: rgb(148, 148, 148);
     color: black;
 }
-
+ /*colonna laterale elenco playlist*/
 .box-ul{
     height: 47%;
     overflow: auto;
@@ -120,6 +121,7 @@ aside{
     color: white;
 }
 
+/*colonna laterale footer*/
 .aside-footer{
     height: 80px;
     padding: 0px 10px;
@@ -159,7 +161,6 @@ aside{
 
 
 
-
 /*contenuto centrale*/
 .content{
     width: 100%;
@@ -174,7 +175,26 @@ aside{
     background-color: rgba(4, 6, 10, 0.726);
     z-index: 500;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+/*pulsante upgrade*/
+.upgrade{
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.upgrade:hover{
+    transform: scale(1.1);
+}
+
 
 /*footer*/
 footer{
