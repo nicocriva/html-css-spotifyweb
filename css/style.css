@@ -197,16 +197,29 @@ aside{
 .content-nav{
     display: flex;
     justify-content: center;
+
 }
 
+
+
 .content-nav *{
+    font-size: 14px;
     margin: 10px 10px;
     color: rgb(148, 148, 148);
+    height: 25px;
+    justify-content: center;
+    text-transform: uppercase;
+
 }
 
 .content-nav-row{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+}
+
+.content-nav-row *:hover{
+    color: white;
 }
 
 .nav-row-special{
@@ -215,7 +228,7 @@ aside{
 }
 
 .cover-border-special-1{
-    width: 20px;
+    width: 25px;
     height: 10px;
     background-color: rgb(20, 25, 34);
     position: relative;
@@ -223,15 +236,86 @@ aside{
 }
 
 .cover-border-special-2{
-    width: 20px;
+    width: 25px;
     height: 10px;
     background-color: rgb(20, 25, 34);
     position: relative;
-    left: 60px;
+    left: 70px;
     bottom: 30px;
 }
 
+/*galleria canzoni*/
+.main-section{
+    padding: 10px;
+    height: 500px;
+    overflow-y: auto;
+}
 
+.row-name div:first-child{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/*row canzoni recenti*/
+.recent-row-lg, .created-row-lg{
+    display: flex;
+}   
+
+.album{
+    margin: 0 7px;
+    width: 150px;
+}
+
+.album-img{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.album-img img{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+/*simbolo play*/
+.far.fa-play-circle{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 58px;
+    left: 55px;
+    display: none;
+}
+
+.album-img:hover{
+    filter: opacity(50%);
+}
+
+.album-img:hover .far.fa-play-circle{
+    display: block;
+}
+
+/*album info*/
+.album-info{
+    text-align: center;
+}
+
+.album-name{
+    margin-bottom: 5px;
+    color: white;
+}
+
+.album-author{
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+}
+
+/*Creato per te*/
+.row-name-description{
+    color: rgb(148, 148, 148);
+    margin-bottom: 20px;
+}
 
 /*footer*/
 footer{
@@ -244,3 +328,6 @@ footer{
 
 
 /*debug*/
+.row-lg{
+    height: 150px;
+}
