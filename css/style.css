@@ -197,7 +197,7 @@ aside{
 .content-nav{
     display: flex;
     justify-content: center;
-
+    margin-bottom: 30px;
 }
 
 
@@ -247,25 +247,33 @@ aside{
 /*galleria canzoni*/
 .main-section{
     padding: 10px;
-    height: calc(100vh - 80px - 80px);
+    margin-top: 50px;
+    height: calc(100vh - 80px - 80px - 50px);
     overflow: auto;
 
 }
 
-.row-name div:first-child{
+.row-name div{
     color: white;
     font-size: 20px;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 20px 0 10px;
 }
+
+.recent.row-name div{
+    margin: 0 0 10px;
+}
+
+
 
 /*row canzoni recenti*/
 .recent-row-lg, .created-row-lg, .artists-row-lg{
     display: flex;
+    flex-wrap: wrap;
 }   
 
 .album{
-    margin: 0 7px;
+    margin: 10px 7px 0;
     width: 150px;
 }
 
@@ -335,8 +343,4 @@ footer{
 }
 
 
-
-/*debug*/
-.row-lg{
-    height: 150px;
-}
+/*---------media query------------*/
