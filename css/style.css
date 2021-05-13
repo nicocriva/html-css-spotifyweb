@@ -247,8 +247,9 @@ aside{
 /*galleria canzoni*/
 .main-section{
     padding: 10px;
-    height: 500px;
-    overflow-y: auto;
+    height: calc(100vh - 80px - 80px);
+    overflow: auto;
+
 }
 
 .row-name div:first-child{
@@ -259,7 +260,7 @@ aside{
 }
 
 /*row canzoni recenti*/
-.recent-row-lg, .created-row-lg{
+.recent-row-lg, .created-row-lg, .artists-row-lg{
     display: flex;
 }   
 
@@ -276,6 +277,10 @@ aside{
 .album-img img{
     width: 100%;
     margin-bottom: 0px;
+}
+
+.circle.album-img img{
+    border-radius: 50%;
 }
 
 /*simbolo play*/
@@ -299,6 +304,10 @@ aside{
 /*album info*/
 .album-info{
     text-align: center;
+}
+
+.circle.album-info{
+    margin-bottom: 50px;
 }
 
 .album-name{
