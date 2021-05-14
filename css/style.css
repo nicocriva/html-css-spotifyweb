@@ -193,7 +193,7 @@ aside{
 }
 
 /*simbolo play*/
-.far.fa-play-circle{
+.album-img>.far.fa-play-circle{
     color: white;
     font-size: 40px;
     position: absolute;
@@ -269,6 +269,7 @@ footer{
     width: 90px;
     text-align: left;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .currently-playing-info div:first-child{
@@ -281,6 +282,10 @@ footer{
     color: rgb(148, 148, 148);
     font-size: 14px;
     font-weight: 400;
+}
+
+.currently-playing-info div:last-child:hover{
+    text-decoration: underline;
 }
 
 .fas.fa-heart{
@@ -309,8 +314,91 @@ footer{
 
 /*-----footer center-----*/
 .footer-center{
-    flex-basis: 400px;
-    background-color: rgb(175, 66, 66);
+    flex-basis: 550px;
+}
+
+.fc-top{
+    line-height: 25px;
+}
+
+.fc-top i{
+    color: rgb(150, 150, 150);
+    margin: 5px 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fc-top i:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+.fc-top>.far.fa-play-circle{
+    font-size: 22px;
+}
+
+.fc-bottom{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px 0
+}
+
+.fc-bottom>.line{
+    width: 100%;
+    position: relative;
+}
+
+.line>.background-line{
+    margin: 10px;
+    border: 2px solid rgba(148, 148, 148, 0.377);
+}
+
+.line>.white-line{
+    width: 25%;
+    margin: 10px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+.line>.green-line{
+    width: 25%;
+    margin: 10px;
+    border: 2px solid rgb(36, 173, 18);
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.pointer{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 50px;
+    position: absolute;
+    left: 110px;
+    bottom: -9px;
+    display: none;
+}
+
+.line:hover{
+    cursor: pointer;
+}
+
+.line:hover .pointer{
+    display: block;
+}
+
+.line:hover .green-line{
+    display: block;
+}
+
+.time{
+    font-size: 14px;
+    margin: 0 5px;
 }
 
  /*-----footer right-----*/
