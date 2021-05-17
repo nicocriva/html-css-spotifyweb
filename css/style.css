@@ -97,6 +97,10 @@ aside{
     transform: scale(1.1);
 }
 
+.upgrade:active{
+    transform: scale(1);
+}
+
 /*nav sezione centrale*/
 .content-nav{
     display: flex;
@@ -263,10 +267,11 @@ footer{
 
 .footer-left img{
     height: 80%;
+    display: none;
 }
 
 .currently-playing-info{
-    width: 90px;
+    width: 40%;
     text-align: left;
     margin-left: 10px;
     cursor: pointer;
@@ -288,8 +293,12 @@ footer{
     text-decoration: underline;
 }
 
+.footer-left>div:last-child{
+    margin: 0 10px 0 -5px;
+}
+
 .fas.fa-heart{
-    margin-left: 30px;
+    margin-left: 8px;
     color: rgb(148, 148, 148);
     cursor: pointer;
     transition: 0.2s;
@@ -301,10 +310,11 @@ footer{
 }
 
 .fas.fa-folder{
-    margin-left: 10px;
+    margin-left: 8px;
     color: rgb(148, 148, 148);
     cursor: pointer;
     transition: 0.2s;
+    display: none;
 }
 
 .fas.fa-folder:active{
@@ -319,11 +329,14 @@ footer{
 
 .fc-top{
     line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fc-top i{
     color: rgb(150, 150, 150);
-    margin: 5px 10px;
+    margin: 5px 2%;
     vertical-align: middle;
     cursor: pointer;
     transition: 0.5s;
@@ -335,7 +348,7 @@ footer{
 }
 
 .fc-top>.far.fa-play-circle{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .fc-bottom{
@@ -418,9 +431,14 @@ footer{
 
 .fr-row i{
     font-size: 14px;
-    margin: 0 10px;
+    margin: 0 2%;
     color: rgb(148, 148, 148);
     transition: 0.5s;
+    display: none;
+}
+
+.fr-row i:nth-child(3){
+    display: block;
 }
 
 .fr-row i:hover{
@@ -430,7 +448,8 @@ footer{
 }
 
 .line2{
-    width: 130px;
+    width: 50%;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -649,6 +668,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 539px){
+    .footer-left>div:last-child{
+        margin: 0 10px 0 10px;
+    }    
+}
+
 @media screen and (min-width: 540px) {
     .xs-aside-view{
         display: none;
@@ -663,16 +688,35 @@ footer{
         bottom: 25px;
     }
 
-}
+    .footer-left img{
+        display: block;
+    }
 
-@media screen and (min-width: 540px) and (max-width: 765px){
+    .fr-row i{
+        display: block;
+    }
+
+    .fas.fa-folder{
+        display: block;
+    }
+    
     .content-nav{
         margin-bottom: -20px;
     }
+
+    .footer-left>div:last-child{
+        margin: 0 10px 0 10px;
+    }    
 }
 
 @media screen and (min-width: 766px){
     .content-nav{
         margin-bottom: -50px;
     }
+
+    .fas.fa-folder{
+        display: inline-block;
+    }
 }
+
+
