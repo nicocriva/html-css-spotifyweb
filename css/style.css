@@ -73,13 +73,7 @@ aside{
 
 /*header contenuto centrale*/
 .content-header{
-    width: 100%;
-    height: 80px;
-    z-index: 500;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: none;
 }
 
 /*pulsante upgrade*/
@@ -152,7 +146,7 @@ aside{
 .main-section{
     padding: 10px;
     margin-top: 50px;
-    height: calc(100vh - 80px - 80px - 50px - 5px);
+    height: calc(100vh  - 80px - 50px - 5px);
     /*sottrazione di content-header, footer, margini vari*/
     overflow: auto;
 
@@ -294,7 +288,7 @@ footer{
 }
 
 .footer-left>div:last-child{
-    margin: 0 10px 0 -5px;
+    margin: 0 10px 0 10px;
 }
 
 .fas.fa-heart{
@@ -392,7 +386,7 @@ footer{
     background-color: rgb(223, 223, 223);
     border-radius: 50px;
     position: absolute;
-    left: 110px;
+    left: 22%;
     bottom: -9px;
     display: none;
 }
@@ -460,7 +454,7 @@ footer{
 }
 
 .white-line2{
-    width: 40px;
+    width: 40%;
     margin: 10px;
     border: 2px solid white;
     position: absolute;
@@ -468,7 +462,7 @@ footer{
 }
 
  .green-line2{
-    width: 40px;
+    width: 40%;
     margin: 10px;
     border: 2px solid rgb(36, 173, 18);
     position: absolute;
@@ -483,7 +477,7 @@ footer{
     background-color: rgb(223, 223, 223);
     border-radius: 50px;
     position: absolute;
-    left: 30px;
+    left: 30%;
     bottom: -9px;
     display: none;
 }
@@ -656,8 +650,24 @@ footer{
     }
 }
 
+@media screen and (min-height: 350px){
+    .content-header{
+        width: 100%;
+        height: 80px;
+        z-index: 500;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-/*correzione dimensioni*/
+    .main-section{
+        height: calc(100vh - 80px - 80px - 50px - 5px);
+    }
+}
+
+
+/*correzione dimensioni responsive*/
 @media screen and (min-width: 320px) and (max-width:397px) {
     .album{
         width: calc((100% / 2) - 14px);
@@ -676,31 +686,21 @@ footer{
     }
 }
 
-@media screen and (min-width: 374px) and (max-width: 450px){
-    .content-nav *{
-        margin: 10px 5px;
-    }
-}
-
 @media screen and (min-width: 374px) and (max-width: 380px){
     .content-nav{
         margin-bottom: 100px;
     }
 }
 
-@media screen and (max-width: 539px){
-    .footer-left>div:last-child{
-        margin: 0 10px 0 10px;
-    }    
+@media screen and (min-width: 374px) and (max-width: 450px){
+    .content-nav *{
+        margin: 10px 5px;
+    }
 }
 
 @media screen and (min-width: 540px) {
     .xs-aside-view{
         display: none;
-    }
-
-    .cover-border-special-1{
-        bottom: 0;
     }
     
     .cover-border-special-2{
@@ -719,14 +719,6 @@ footer{
     .fas.fa-folder{
         display: block;
     }
-    
-    .content-nav{
-        margin-bottom: -20px;
-    }
-
-    .footer-left>div:last-child{
-        margin: 0 10px 0 10px;
-    }    
 }
 
 @media screen and (min-width: 766px){
